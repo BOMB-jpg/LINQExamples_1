@@ -61,6 +61,9 @@ namespace LINQExamples_1
             //    Console.WriteLine($"{item.FullName,-20} {item.AnnualSalary,10}");
             //}
 
+
+            
+
             ////Immediate Execution Example
             //var results = (from emp in employeeList.GetHighSalariedEmployees()
             //              select new
@@ -161,7 +164,7 @@ namespace LINQExamples_1
     }
 
 
-    public static class EnumerableCollectionExtensionMethods
+    public static class EnumerableCollectionExtensionMethods   //可枚举集合扩展方法
     {
         public static IEnumerable<Employee> GetHighSalariedEmployees(this IEnumerable<Employee> employees)
         {
@@ -195,6 +198,8 @@ namespace LINQExamples_1
 
     public static class Data
     {
+
+        //GetEmployees
         public static List<Employee> GetEmployees()
         {
             List<Employee> employees = new List<Employee>();
@@ -242,7 +247,7 @@ namespace LINQExamples_1
 
             return employees;
         }
-
+ //
         public static List<Department> GetDepartments()
         {
             List<Department> departments = new List<Department>();
